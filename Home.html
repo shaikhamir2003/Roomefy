@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Roomefy - Book Smart Stays for Students & Professionals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-hotel"></i>
+                    <span>Roomefy</span>
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Login</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-outline">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Room</h1>
+            <p>Affordable rooms for students, professionals, and travelers</p>
+            <div class="search-box">
+                <div class="search-options">
+                    <div class="search-option active" data-type="city">City</div>
+                    <div class="search-option" data-type="campus">Near Campus</div>
+                    <div class="search-option" data-type="business">Business Area</div>
+                </div>
+                <input type="text" class="search-input" placeholder="Search by location...">
+                <button class="search-btn"><i class="fas fa-search"></i> Find Stays</button>
+            </div>
+            <div class="hero-tags">
+                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                <span><i class="fas fa-utensils"></i> Meal Plans</span>
+                <span><i class="fas fa-subway"></i> Great Transport</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Filters -->
+    <section class="audience-section">
+        <div class="container">
+            <div class="audience-filters">
+                <button class="audience-filter active" data-filter="all">All Stays</button>
+                <button class="audience-filter" data-filter="student">For Students</button>
+                <button class="audience-filter" data-filter="professional">For Professionals</button>
+                <button class="audience-filter" data-filter="traveler">For Travelers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Roomefy?</h2>
+                <p>We cater to students, working professionals, and travelers with the best stays.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Student-Friendly</h3>
+                    <p>Affordable stays near campuses with study spaces.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Professional Ready</h3>
+                    <p>High-speed WiFi & workspaces in business districts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-suitcase-rolling"></i></div>
+                    <h3>Traveler Convenience</h3>
+                    <p>Flexible bookings near transit hubs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Rooms</h2>
+                <p>Handpicked stays for every need</p>
+            </div>
+            <div class="rooms-grid" id="featuredRooms">
+                <!-- Loaded from Firebase -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Guests Say</h2>
+                <p>Real experiences from students, professionals, and travelers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Perfect for my semester abroad! Great study spaces and close to campus."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student">
+                        <div>
+                            <h4>Sarah K.</h4>
+                            <p>Student</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"As a consultant, I need reliable WiFi and workspace. Roomefy delivers!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professional">
+                        <div>
+                            <h4>Raj M.</h4>
+                            <p>Business Consultant</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Flexible check-in and great location. Will book again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Traveler">
+                        <div>
+                            <h4>Priya S.</h4>
+                            <p>Digital Nomad</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA for Property Owners -->
+    <section class="owner-cta">
+        <div class="container">
+            <h2>Have a Property to List?</h2>
+            <p>Join thousands of hosts earning with Roomefy.</p>
+            <a href="#" class="btn btn-outline">List Your Property</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Roomefy</h3>
+                    <p>Smart stays for students, professionals, and travelers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Info</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Roomefy . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase & Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

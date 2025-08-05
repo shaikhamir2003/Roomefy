@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roomefy - Create Your Account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="trust-badges">
+      <div class="trust-item">
+        <i class="fas fa-shield-alt"></i>
+        <span>256-bit Encryption</span>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-user-shield"></i>
+        <span>GDPR Compliant</span>
+      </div>
+    </div>
+    
+    <div class="logo">
+      <span class="gradient-text">Roomefy</span>
+    </div>
+    <h2>Create Your Account</h2>
+    <p class="subtitle">Join Roomefy to find your perfect room</p>
+
+    <form class="signup-form" id="signupForm">
+      <div class="form-group">
+        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+      </div>
+      
+      <div class="form-group">
+        <input type="email" id="signupEmail" name="email" placeholder="Email Address" required />
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="signupPassword" name="password" placeholder="Create Password" required minlength="8" />
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="verifyPassword" placeholder="Verify Password" required minlength="8" />
+      </div>
+      
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="termsAgreement" name="terms" required />
+        <label for="termsAgreement">I agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a></label>
+      </div>
+      
+      <button type="submit" class="submit-btn">
+        <i class="fas fa-user-plus"></i>
+        <span>Create Account</span>
+      </button>
+      
+      <div class="security-assurance">
+        <i class="fas fa-lock"></i>
+        <span>Your data is encrypted & secure</span>
+        <i class="fas fa-check-circle"></i>
+      </div>
+      
+      <div class="login-prompt">
+        Already have an account? <a href="login.html" class="login-link">Sign in</a>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="js/signup.js"></script>
+</body>
+</html>

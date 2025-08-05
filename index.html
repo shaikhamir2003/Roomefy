@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Roomefy - Perfect Stays for Students & Professionals</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-hotel"></i>
+                    Roomefy
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline" id="loginBtn">Login</a>
+                    <a href="SignUp.html" class="btn btn-primary" id="signupBtn">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-outline" id="mobileLoginBtn">Login</a>
+            <a href="#" class="btn btn-primary" id="mobileSignupBtn">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Smart Stays for Busy Lives</h1>
+            <p>Find perfect accommodations near campuses, offices, and transit hubs</p>
+            <div class="search-box">
+                <div class="search-options">
+                    <div class="search-option active" data-type="city">City</div>
+                    <div class="search-option" data-type="campus">Near Campus</div>
+                    <div class="search-option" data-type="business">Business Area</div>
+                </div>
+                <input type="text" class="search-input" placeholder="Search by location or university...">
+                <button class="search-btn"><i class="fas fa-search"></i> Find Stays</button>
+            </div>
+            <div class="hero-tags">
+                <span><i class="fas fa-wifi"></i> Workspaces</span>
+                <span><i class="fas fa-utensils"></i> Meal Plans</span>
+                <span><i class="fas fa-subway"></i> Transport Links</span>
+                <span><i class="fas fa-desktop"></i> Study Areas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Filters -->
+    <section class="container audience-section">
+        <div class="audience-filters">
+            <button class="audience-filter active" data-filter="all">All Stays</button>
+            <button class="audience-filter" data-filter="student">For Students</button>
+            <button class="audience-filter" data-filter="professional">For Professionals</button>
+            <button class="audience-filter" data-filter="traveler">For Travelers</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Roomefy</h2>
+                <p>We understand the unique needs of students, professionals, and travelers</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student-Friendly</h3>
+                    <p>Semester-long stays with study spaces and campus transport</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional Ready</h3>
+                    <p>High-speed WiFi, workspaces, and business district locations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                    <h3>Traveler Convenience</h3>
+                    <p>Flexible bookings with great transit connections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Accommodations</h2>
+                <p>Curated spaces for different lifestyles</p>
+            </div>
+            <div class="rooms-grid" id="featuredRooms">
+                <!-- Dynamically loaded from Firebase -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Exclusive Offers</h2>
+                <p>Special deals for our community</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-img-container">
+                        <img src="https://images.unsplash.com/photo-1529408632839-a54952c491e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Student Housing">
+                        <div class="offer-badge">Student Special</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Academic Year Package</h3>
+                        <p>15% discount on 8+ month bookings with free laundry</p>
+                        <div class="offer-footer">
+                            <span class="offer-price">From $450/month</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-img-container">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Corporate Housing">
+                        <div class="offer-badge">Professional Deal</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Corporate Monthly Rate</h3>
+                        <p>10% discount for professionals with free coworking access</p>
+                        <div class="offer-footer">
+                            <span class="offer-price">From $799/month</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-img-container">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80" alt="Traveler Stay">
+                        <div class="offer-badge">Traveler's Choice</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Flexi Weekly Stay</h3>
+                        <p>20% off weekly bookings with free cancellation</p>
+                        <div class="offer-footer">
+                            <span class="offer-price">From $99/week</span>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Community Speaks</h2>
+                <p>Real experiences from people like you</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Perfect for my exchange semester! The study lounge and campus shuttle made student life so much easier."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Student">
+                        <div>
+                            <h4>Raj K.</h4>
+                            <p>International Student</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"As a consultant who travels weekly, these stays provide the perfect home-away-from-home with reliable WiFi."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Professional">
+                        <div>
+                            <h4>Sarah M.</h4>
+                            <p>Business Consultant</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The flexible booking options saved me when my plans changed unexpectedly. Will definitely book again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Traveler">
+                        <div>
+                            <h4>Priya S.</h4>
+                            <p>Digital Nomad</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner CTA -->
+    <section class="owner-cta">
+        <div class="container">
+            <h2>Have a property to list?</h2>
+            <p>Join our network of trusted hosts catering to students and professionals</p>
+            <a href="#" class="btn btn-outline">List Your Property</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Roomefy</h3>
+                    <p>Bridging the gap between quality accommodations and modern lifestyles since 2025.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>For Students</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Campus Housing</a></li>
+                        <li><a href="#">Semester Stays</a></li>
+                        <li><a href="#">Study Spaces</a></li>
+                        <li><a href="#">Student Discounts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Professionals</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Rooms</a></li>
+                        <li><a href="#">Monthly Rentals</a></li>
+                        <li><a href="#">Co-living Spaces</a></li>
+                        <li><a href="#">Corporate Rates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Information</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Roomefy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="css/index.js"></script>
+</body>
+</html>
